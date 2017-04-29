@@ -1,8 +1,16 @@
 $(function(){
 
+	$.getJSON('http://www.reddit.com/r/earthporn/about.json').done(function(d){
+		console.log(d);
+		$('#miniImg').attr('src', d.data.header_img);
+		$('#miniImg2').attr('src', d.data.header_img);
+
+	});
+
+
 	$.getJSON('http://www.reddit.com/r/earthporn.json?sort=hot').done(function(d){
 		var posts = d.data.children;
-		console.log(posts);
+		// console.log(posts);
 		posts.forEach(function(post){
 			var article = $('<article>');
 			var score = $('<p>').addClass('score').text(post.data.score);

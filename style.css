@@ -15,7 +15,9 @@ article {
 }
 
 .title {
-	/*stuff may need to go here later*/
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
 
 .thumbnail {
@@ -29,8 +31,25 @@ article {
 	width: 40px;
 }
 
-a {
+.submission {
 	text-decoration: none;
 	color: black;
-	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+#miniImg {
+	bottom: 0;
+	left:0;
+	height:188px;
+	width: 52px;
+}
+
+#miniImg2 {
+	bottom: 0;
+	right:0;
+	height:188px;
+	width: 52px;
 }
