@@ -1,0 +1,36 @@
+header img{
+	width:100%;
+	height: 200px;
+	position:absolute;
+}
+
+header {
+	position: relative;
+	height:200px;
+	margin: 0 0 10px 0;
+}
+
+article {
+	overflow: auto;
+}
+
+.title {
+	/*stuff may need to go here later*/
+}
+
+.thumbnail {
+	float: left;
+	margin: 5px 5px;
+}
+
+.score {
+	float: left;
+	transform: translateY(50%);
+	width: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
